@@ -5,7 +5,7 @@ pub mod basic {
         Float(f64),
         Text(String),
     }
-    pub fn initialize_example() {
+    pub fn example() {
         println!("Creating a new, empty vector to hold values of type i32");
         let v: Vec<i32> = Vec::new();
         println!("{:?}", v);
