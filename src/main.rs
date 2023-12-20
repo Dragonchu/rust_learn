@@ -1,6 +1,8 @@
 mod collection_basic;
-use crate::collection_basic::vector_basic;
+mod error_handling;
 use crate::collection_basic::string_basic;
+use crate::collection_basic::vector_basic;
+use crate::error_handling::use_result::result_usage;
 
 use std::env;
 
@@ -9,15 +11,17 @@ fn main() {
     let degree = &args[1];
     let domain = &args[2];
 
-    if degree.eq("basic")  {
+    if degree.eq("basic") {
         if domain.eq("string") {
             string_basic::basic::example();
         } else if domain.eq("vector") {
             vector_basic::basic::example();
-        }else{
+        } else if domain.eq("error_handling") {
+            result_usage::read_file_example();
+        } else {
             println!("no matched domain");
         }
-    }else{
+    } else {
         println!("no matched degree");
     }
 }

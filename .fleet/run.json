@@ -2,10 +2,16 @@
     "configurations": [
         {
             "type": "cargo",
-            "name": "Cargo configuration",
+            "name": "basic_vector",
             "cargoArgs": ["run"],
             "executableArgs": ["basic","vector"],
         },
-        
+        {
+            "type": "cargo",
+            "name": "error_handling",
+            "cargoArgs": ["run"],
+            "executableArgs": ["basic","error_handling"],
+        },
+
     ]
 }
