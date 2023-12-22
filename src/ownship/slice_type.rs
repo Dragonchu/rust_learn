@@ -11,6 +11,10 @@ pub fn example() {
 
     println!("slice show");
     slice_show();
+
+    let s2 = String::from("hello world");
+    let return_slice = first_word_return_slice(&s2);
+    println!("return_slice: {return_slice}");
 }
 
 fn first_word(s: &String) -> usize {
@@ -24,6 +28,19 @@ fn first_word(s: &String) -> usize {
 
     s.len()
 }
+
+fn first_word_return_slice(s: &String) -> &str {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[0..i];
+        }
+    }
+
+    &s[..]
+}
+
 
 fn slice_show() {
     let s = String::from("Hello, slice");
