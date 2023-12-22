@@ -33,5 +33,16 @@
                 "generic_type"
             ],
         },
+        {
+            "type": "cargo",
+            "name": "ownship-slice",
+            "cargoArgs": [
+                "run"
+            ],
+            "executableArgs": [
+                "ownship",
+                "slice_type"
+            ],
+        },
     ]
 }

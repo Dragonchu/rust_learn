@@ -1,6 +1,7 @@
 mod collection_basic;
 mod error_handling;
 mod generic_type;
+mod ownship;
 use crate::collection_basic::string_basic;
 use crate::collection_basic::vector_basic;
 use crate::error_handling::use_result::result_usage;
@@ -54,6 +55,10 @@ fn main() {
             generic_type::basic::example();
         } else {
             println!("no matched domain");
+        }
+    } else if degree.eq("ownship") {
+        if domain.eq("slice_type") {
+            ownship::slice_type::example();
         }
     } else {
         println!("no matched degree");
