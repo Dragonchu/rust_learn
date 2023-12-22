@@ -1,5 +1,6 @@
 mod collection_basic;
 mod error_handling;
+mod generic_type;
 use crate::collection_basic::string_basic;
 use crate::collection_basic::vector_basic;
 use crate::error_handling::use_result::result_usage;
@@ -49,6 +50,8 @@ fn main() {
             vector_basic::basic::example();
         } else if domain.eq("error_handling") {
             result_usage::read_file_example();
+        } else if domain.eq("generic_type") {
+            generic_type::basic::example();
         } else {
             println!("no matched domain");
         }

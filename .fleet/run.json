@@ -3,15 +3,35 @@
         {
             "type": "cargo",
             "name": "basic_vector",
-            "cargoArgs": ["run"],
-            "executableArgs": ["basic","vector"],
+            "cargoArgs": [
+                "run"
+            ],
+            "executableArgs": [
+                "basic",
+                "vector"
+            ],
         },
         {
             "type": "cargo",
             "name": "error_handling",
-            "cargoArgs": ["run"],
-            "executableArgs": ["basic","error_handling"],
+            "cargoArgs": [
+                "run"
+            ],
+            "executableArgs": [
+                "basic",
+                "error_handling"
+            ],
         },
-
+        {
+            "type": "cargo",
+            "name": "generic_type",
+            "cargoArgs": [
+                "run"
+            ],
+            "executableArgs": [
+                "basic",
+                "generic_type"
+            ],
+        },
     ]
 }
