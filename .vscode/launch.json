@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0", // 使用的 launch.json 文件的版本
+    "configurations": [ // 调试器配置的数组
+        {
+            "type": "lldb", // 调试器的类型，这里是 LLDB
+            "request": "launch", // 调试器启动时的请求类型，表示要启动新的进程进行调试
+            "name": "Debug basic vector", // 调试配置的名称，显示在 VSCode 中的调试配置列表中
+            "cargo": { // 使用 Cargo 构建工具的配置
+                "args": [ // 传递给 Cargo 命令的参数
+                    "build",
+                    "--bin=rust_learn",
+                    "--package=rust_learn",
+                    "--manifest-path=Cargo.toml"
+                ],
+                "filter": { // 指定构建过程中要过滤的目标类型
+                    "kind": "bin" // 过滤出二进制目标
+                }
+            },
+            "args": [
+                "basic",
+                "vector"
+            ] // 过滤出二进制目标
+        }
+    ]
+}
