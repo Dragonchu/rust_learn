@@ -20,8 +20,8 @@
                 }
             },
             "args": [
-                "basic",
-                "vector"
+                "ownship",
+                "lifetime"
             ] // 过滤出二进制目标
         }
     ]

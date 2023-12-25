@@ -59,6 +59,8 @@ fn main() {
     } else if degree.eq("ownship") {
         if domain.eq("slice_type") {
             ownship::slice_type::example();
+        }else if domain.eq("lifetime") {
+            ownship::lifetime::example();
         }
     } else {
         println!("no matched degree");
