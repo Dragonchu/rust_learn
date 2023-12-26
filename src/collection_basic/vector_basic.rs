@@ -61,4 +61,19 @@ pub mod basic {
         ];
         println!("{:?}", row);
     }
+
+    pub fn create_repeat_elements(){
+        let board = vec![vec!['.';5];5];
+        println!("{:?}", board);
+    }
+}
+
+#[cfg(test)]
+mod tests{
+    use super::{*};
+
+    #[test]
+    fn example_run(){
+        basic::create_repeat_elements();
+    }
 }
